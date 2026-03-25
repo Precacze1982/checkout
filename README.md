@@ -15,7 +15,6 @@
 - Updated to the node24 runtime
   - This requires a minimum Actions Runner version of [v2.327.1](https://github.com/actions/runner/releases/tag/v2.327.1) to run.
 
-
 # Checkout v4
 
 This action checks-out your repository under `$GITHUB_WORKSPACE`, so your workflow can access it.
@@ -28,7 +27,7 @@ When Git 2.18 or higher is not in your PATH, falls back to the REST API to downl
 
 ### Note
 
-Thank you for your interest in this GitHub action, however, right now we are not taking contributions. 
+Thank you for your interest in this GitHub action, however, right now we are not taking contributions.
 
 We continue to focus our resources on strategic areas that help our customers be successful while making developers' lives easier. While GitHub Actions remains a key part of this vision, we are allocating resources towards other areas of Actions and are not taking contributions to this repository at this time. The GitHub public roadmap is the best place to follow along for any updates on features we’re working on and what stage they’re in.
 
@@ -36,7 +35,7 @@ We are taking the following steps to better direct requests related to GitHub Ac
 
 1. We will be directing questions and support requests to our [Community Discussions area](https://github.com/orgs/community/discussions/categories/actions)
 
-2. High Priority bugs can be reported through Community Discussions or you can report these to our support team https://support.github.com/contact/bug-report.
+2. High Priority bugs can be reported through Community Discussions or you can report these to our support team <https://support.github.com/contact/bug-report>.
 
 3. Security Issues should be handled as per our [security.md](security.md)
 
@@ -168,7 +167,7 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
 - [Checkout V5](#checkout-v5)
   - [What's new](#whats-new)
 - [Checkout V4](#checkout-v4)
-    - [Note](#note)
+  - [Note](#note)
 - [What's new](#whats-new-1)
 - [Usage](#usage)
 - [Scenarios](#scenarios)
@@ -255,7 +254,8 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
     repository: my-org/my-tools
     path: my-tools
 ```
-> - If your secondary repository is private or internal you will need to add the option noted in [Checkout multiple repos (private)](#Checkout-multiple-repos-private)
+
+> - If your secondary repository is private or internal you will need to add the option noted in [Checkout multiple repos (private)](#checkout-multiple-repos-private)
 
 ## Checkout multiple repos (nested)
 
@@ -269,7 +269,8 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
     repository: my-org/my-tools
     path: my-tools
 ```
-> - If your secondary repository is private or internal you will need to add the option noted in [Checkout multiple repos (private)](#Checkout-multiple-repos-private)
+
+> - If your secondary repository is private or internal you will need to add the option noted in [Checkout multiple repos (private)](#checkout-multiple-repos-private)
 
 ## Checkout multiple repos (private)
 
@@ -288,7 +289,6 @@ Please refer to the [release page](https://github.com/actions/checkout/releases/
 ```
 
 > - `${{ github.token }}` is scoped to the current repository, so if you want to checkout a different repository that is private you will need to provide your own [PAT](https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line).
-
 
 ## Checkout pull request HEAD commit instead of merge commit
 
@@ -330,7 +330,8 @@ jobs:
           git commit -m "generated"
           git push
 ```
-*NOTE:* The user email is `{user.id}+{user.login}@users.noreply.github.com`. See users API: https://api.github.com/users/github-actions%5Bbot%5D
+
+*NOTE:* The user email is `{user.id}+{user.login}@users.noreply.github.com`. See users API: <https://api.github.com/users/github-actions%5Bbot%5D>
 
 ## Push a commit to a PR using the built-in token
 
@@ -355,7 +356,7 @@ jobs:
           git push
 ```
 
-*NOTE:* The user email is `{user.id}+{user.login}@users.noreply.github.com`. See users API: https://api.github.com/users/github-actions%5Bbot%5D
+*NOTE:* The user email is `{user.id}+{user.login}@users.noreply.github.com`. See users API: <https://api.github.com/users/github-actions%5Bbot%5D>
 
 # Recommended permissions
 
